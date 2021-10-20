@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -47,50 +48,78 @@
     </header>
 
     <main>
-        <form action="./" method="POST">
-            <div>
+        <form action="./" method="POST" class="formulario">
+            <h2>¡Regístrate aquí!</h2>
+            <div class="items-formulario">
                 <label>Nombre y apellido:</label>
                 <input type="text" name="nombre">
             </div>
-            <div>
+            <div class="items-formulario">
                 <label>Nombre de usuari@:</label>
                 <input type="text" name="nombre">
             </div>
-            <div>
+            <div class="items-formulario">
                 <label>Fecha de nacimiento:</label>
                 <input type="date" name="fecha-nacimiento">
             </div>
-            <div>
+            <div class="items-formulario">
                 <label>Domicilio:</label>
                 <input type="text" name="domicilio">
             </div>
-            <div>
+            <div class="items-formulario">
                 <label>Perfil del usuario:</label>
-                <input type="radio" name="perfil-usuario">Comprador
-                <input type="radio" name="perfil-usuario">Vendedor
+                <div class="perfil-usuario">
+                    <div class="perfil-comprador">
+                        <input type="radio" name="perfil-usuario">Comprador
+                    </div>
+                    <div class="perfil-vendedor">
+                        <input type="radio" name="perfil-usuario">Vendedor
+                    </div>
+                </div>
             </div>
-            <div>
+            <div class="items-formulario">
                 <label>Categorías de interés:</label>
-                <input type="checkbox" name="categorias">Electro
-                <input type="checkbox" name="categorias">Moda
-                <input type="checkbox" name="categorias">Hogar
-                <input type="checkbox" name="categorias">Juguetería
-                <input type="checkbox" name="categorias">Vida sana
+                <div class="todas-categorias">
+                    <div class="items-categorias">
+                        <input type="checkbox" name="categorias">Electro
+                    </div>
+                    <div class="items-categorias">
+                        <input type="checkbox" name="categorias">Moda
+                    </div>
+                    <div class="items-categorias">
+                        <input type="checkbox" name="categorias">Hogar
+                    </div>
+                    <div class="items-categorias">
+                        <input type="checkbox" name="categorias">Juguetería
+                    </div>
+                    <div class="items-categorias">
+                        <input type="checkbox" name="categorias">Vida sana
+                    </div>
+                </div>
             </div>
-            <div>
+            <div class="items-formulario">
                 <label>Foto de usuario</label>
-                <input type="file" name="usuario" accept=".jpg">
+                <div class="seleccionar-archivo">
+                    <p id="texto-seleccionar">Seleccionar archivo</p>
+                    <input type="file" name="usuario" accept=".jpg">
+                </div>
             </div>
-            <div>
+            <div class="items-formulario">
                 <label>Crea una contraseña:</label>
                 <input type="password" name="password">
             </div>
-            <div>
+            <div class="items-formulario">
                 <label>Confirma tu contraseña:</label>
                 <input type="password" name="password-confirm">
             </div>
-            <button type="reset">Borrar</button>
-            <button type="submit">Guardar</button>
+            <div class="botones-b-g">
+                <div id="boton-borrar">
+                    <button type="reset">Borrar</button>
+                </div>
+                <div id="boton-guardar">
+                    <button type="submit">Guardar</button>
+                </div>
+            </div>
         </form>
     </main>
 
@@ -119,6 +148,5 @@
         <p class="copyright">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
     </footer>
 </body>
+
 </html>
-
-

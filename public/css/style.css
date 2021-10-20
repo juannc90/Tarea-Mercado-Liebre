@@ -9,6 +9,7 @@
 body{
     background-color: #ebebeb;
 }
+/* Header -----------------------------------*/
 header {
     background-color: #EAC926;
 }
@@ -57,6 +58,7 @@ header ul li a{
     text-decoration: none;
     color: black;
 }
+/* Main -----------------------------------*/
 .main-navbar{
     display: none;
 }
@@ -137,6 +139,115 @@ main article nav{
     background-color: white;
     margin: 0;
 }
+/* Formulario de Registro -----------------------------------*/
+.formulario{
+    padding: 20px 15px;
+    display: block;
+    flex-direction: column;
+    width: 70vw;
+    margin: auto;
+}
+main form h2{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.items-formulario{
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+}
+.items-formulario label{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.items-formulario input{
+    height: 30px;
+    padding: 0 5px;
+    display: inline-block;
+    border-radius: 5px;
+    border: solid 0.5px grey
+}
+.perfil-usuario{
+    display: flex;
+    height: 33px;
+    align-items: center;
+    width: 170px;
+    justify-content: space-between;
+}
+.perfil-comprador, .perfil-vendedor{
+    display: flex;
+    align-items: center;
+}
+.perfil-usuario input{
+    margin-right: 5px;
+}
+.todas-categorias{
+    display:flex;
+    flex-direction: column;
+}
+.items-categorias{
+    display: flex;
+    align-items: center;
+}
+.items-categorias input{
+    margin-right: 5px;
+}
+.seleccionar-archivo input{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+p#texto-seleccionar{
+    padding-top: 1px;
+    text-align: center;
+    font-size: 10px;
+    color: white;
+    font-weight: 100;
+}
+.seleccionar-archivo{
+    height: 14px;
+    width: 130px;
+    position: relative;
+    background-color: #1259c3;
+    border-radius: 5px;
+}
+.botones-b-g{
+    display: flex;
+    flex-direction: column;
+}
+#boton-borrar, #boton-guardar{
+    text-align: center;
+}
+#boton-borrar button{
+    font-size: 10px;
+    font-weight: 100;
+    color: white;
+    background-color: #cf1919;
+    margin: 3px;
+    width: 50px;
+    height: 17px;
+    border-radius: 5px;
+    border: none
+}
+#boton-guardar button{
+    font-size: 10px;
+    font-weight: 100;
+    color: white;
+    background-color: #1259c3;
+    margin: 3px;
+    width: 50px;
+    height: 17px;
+    border-radius: 5px;
+    border: none
+}    
+/* Fin Formulario de Registro -----------------------------------*/
+/* Footer -----------------------------------*/
 footer{
     text-align: center;
     font-size: 16px;
@@ -163,6 +274,7 @@ footer p{
 /***************** vista 481px *****************/
 
 @media (min-width: 481px) {
+    /* Header -----------------------------------*/
     .main-header-top-bar {
         display: flex;
         justify-content: space-between;
@@ -171,6 +283,7 @@ footer p{
     .copy-header{
         padding-top: 0px;
         font-size: 10px;
+        margin: 0;
     }
     header .logo{
         width: 100px;
@@ -204,6 +317,7 @@ footer p{
     .main-navbar{
         display: flex;
         justify-content: space-between;
+        padding: 0 10px;
     }
     .main-navbar ul{
         display: flex;
@@ -214,6 +328,7 @@ footer p{
     .main-navbar li a{
         font-size:10px;
     }
+    /* Main -----------------------------------*/
     main section{
         display: flex;
         flex-wrap: wrap;
@@ -245,11 +360,21 @@ footer p{
     .titulares{
         display:block;
     }
+    /* Formulario de Registro -----------------------------------*/
+    .formulario{
+        max-width: 400px;
+        margin: auto;
+    }
+    .items-formulario{
+        max-width: 100%;
+    }
+    /* Fin Formulario de Registro -----------------------------------*/
 }
 
 /***************** vista 769px *****************/
 
 @media (min-width: 769px){
+    /* Header -----------------------------------*/
     .main-header-top-bar {
         display: flex;
         justify-content: space-between;
@@ -280,13 +405,15 @@ footer p{
     }
     .main-navbar{
         margin-top: 40px;
+        padding: 0 10px;
     }
     .main-navbar li{
-        margin: 5px;
+        margin: 0px;
     }
     .main-navbar ul li a{
         font-size: 16px;
     }
+    /* Main -----------------------------------*/
     main section{
         display: flex;
         flex-wrap: wrap;
@@ -327,4 +454,44 @@ footer p{
     .titulares{
         font-size: 14px;
     }
+    /* Formulario de Registro -----------------------------------*/
+    main form h2{
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    .items-formulario label{
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    .perfil-usuario{
+        width: 220px;
+    }
+    .perfil-comprador, .perfil-vendedor{
+        font-size: 16px;
+    }
+    .items-categorias{
+        font-size: 16px;
+    }
+    p#texto-seleccionar{
+        font-size: 14px;
+    }
+    .seleccionar-archivo{
+        height: 18px;
+        width: 150px;
+        border-radius: 5px;
+    }
+    #boton-borrar button{
+        font-size: 14px;
+        font-weight: 100;
+        width: 60px;
+        height: 21px;
+    }
+    #boton-guardar button{
+        font-size: 14px;
+        font-weight: 100;
+        width: 60px;
+        height: 21px;
+    } 
+    /* Fin Formulario de Registro -----------------------------------*/
 }
