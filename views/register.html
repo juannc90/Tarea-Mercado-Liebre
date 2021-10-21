@@ -48,26 +48,26 @@
     </header>
 
     <main>
-        <form action="./" method="POST" class="formulario">
+        <form action="/" class="formulario">
             <h2>¡Registrate aquí!</h2>
             <div class="items-formulario">
-                <label>Nombre y apellido:</label>
-                <input type="text" name="nombre">
+                <label for="nombre">Nombre y apellido:</label>
+                <input type="text" name="nombre" id="nombre">
             </div>
             <div class="items-formulario">
-                <label>Nombre de usuari@:</label>
-                <input type="text" name="nombre">
+                <label for="nombre-user">Nombre de usuari@:</label>
+                <input type="text" name="nombre-user">
             </div>
             <div class="items-formulario">
-                <label>Fecha de nacimiento:</label>
+                <label for="fecha">Fecha de nacimiento:</label>
                 <input type="date" id="fecha" name="fecha-nacimiento">
             </div>
             <div class="items-formulario">
-                <label>Domicilio:</label>
+                <label for="domicilio">Domicilio:</label>
                 <input type="text" name="domicilio">
             </div>
             <div class="items-formulario">
-                <label>Perfil del usuario:</label>
+                <label for="perfil-usuario">Perfil del usuario:</label>
                 <div class="perfil-usuario">
                     <div class="perfil-comprador">
                         <input type="radio" name="perfil-usuario">Comprador
@@ -78,7 +78,7 @@
                 </div>
             </div>
             <div class="items-formulario">
-                <label>Categorías de interés:</label>
+                <label for="todas-categorias">Categorías de interés:</label>
                 <div class="todas-categorias">
                     <div class="items-categorias">
                         <input type="checkbox" name="categorias">Electro
@@ -98,18 +98,18 @@
                 </div>
             </div>
             <div class="items-formulario">
-                <label>Foto de usuario</label>
+                <label for="usuario">Foto de usuario</label>
                 <div class="seleccionar-archivo">
                     <p id="texto-seleccionar">Seleccionar archivo</p>
                     <input type="file" name="usuario" accept=".jpg">
                 </div>
             </div>
             <div class="items-formulario">
-                <label>Creá una contraseña:</label>
+                <label for="pasword">Creá una contraseña:</label>
                 <input type="password" name="password">
             </div>
             <div class="items-formulario">
-                <label>Confirmá tu contraseña:</label>
+                <label for="password-confirm">Confirmá tu contraseña:</label>
                 <input type="password" name="password-confirm">
             </div>
             <div class="botones-b-g">
