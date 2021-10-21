@@ -20,7 +20,7 @@ header {
     justify-content: space-between;
 }
 header .logo{
-    width: 150px;
+    max-width: 150px;
 }
 .busqueda {
     color: #666;
@@ -166,7 +166,11 @@ main form h2{
     padding: 0 5px;
     display: inline-block;
     border-radius: 5px;
-    border: solid 0.5px grey
+    border: solid 0.5px grey;
+}
+#fecha{
+    width: 100%;
+    background-color: white;
 }
 .perfil-usuario{
     display: flex;
@@ -238,13 +242,17 @@ p#texto-seleccionar{
 #boton-guardar button{
     font-size: 10px;
     font-weight: 100;
-    color: white;
-    background-color: #1259c3;
+    background-color: #909cce;
     margin: 3px;
     width: 50px;
     height: 17px;
     border-radius: 5px;
-    border: none
+    border: none;
+    transition-property: background-color, color;
+}
+#boton-guardar button:hover{
+    background-color: #0022AA;
+    color: white;
 }    
 /* Fin Formulario de Registro -----------------------------------*/
 
@@ -254,7 +262,7 @@ footer{
     font-size: 16px;
     background-color: white;
 }
-footer nav i{
+footer div i{
     margin-top: 20px;
     margin-bottom: 10px;
     color: #1259c3;
@@ -287,11 +295,11 @@ footer p{
         margin: 0;
     }
     header .logo{
-        width: 100px;
+        max-width: 20vw;
         margin-right: 20px;
     }
     .busqueda input{
-        width: 100px;
+        max-width: 20vw;
         height: 15px;
         padding: 0 5px;
         border-radius: 5px;
@@ -343,8 +351,13 @@ footer p{
     main section article{
         width: 40vw;
         flex-direction: column;
-        box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 );
+        box-shadow : none;
         margin-bottom: 10px;
+        transition-property: box-shadow;
+        transition-duration: 450ms;
+    }
+    main section article:hover{
+        box-shadow: 0px 0px 10px rgb( 100 , 100 , 100 );
     }
     main section article img{
         margin-bottom: 0;
@@ -353,6 +366,10 @@ footer p{
         position: relative;
         right: -85%;
         top: -17px;
+        transition-duration: 450ms;
+    }
+    main section article i:hover{
+        transform: rotate(-90deg);
     }
     .detalles-producto{
         width: 40vw;
@@ -360,6 +377,12 @@ footer p{
     }
     .titulares{
         display:block;
+        opacity: 0;
+        transition-property: opacity;
+        transition-duration: 450ms;        
+    }
+    .titulares:hover{
+        opacity: 1;
     }
     /* Formulario de Registro -----------------------------------*/
     .formulario{
@@ -382,7 +405,7 @@ footer p{
         align-items: center;
     }
     header .logo{
-        width: 200px;
+        max-width: 25vw;
     }
     .copy-header{
         margin: 0;
@@ -391,7 +414,7 @@ footer p{
         padding-top: 0px;
     }
     .busqueda input{
-        width: 150px;
+        width: 500px;
         height: 20px;
     }
     .busqueda{
@@ -438,7 +461,7 @@ footer p{
         border-radius: 50%;
         color: #39b54a;
         position: relative;
-        right: -13vw;
+        left: 15vw;
         top: -25px;
     }
     .detalles-producto{
@@ -495,4 +518,22 @@ footer p{
         height: 21px;
     } 
     /* Fin Formulario de Registro -----------------------------------*/
+    /* Footer -----------------------------------*/
+    .secciones-footer{
+        display: flex;
+        justify-content: space-around;
+    }
+    .items-footer{
+        width: 27vw;
+    }
+    footer p{
+        width: 100%;
+    }
+    footer div i{
+        color: #1259c3;
+        transition-property: color;
+    }
+    footer div i:hover{
+        color: #EAC926;
+    }
 }
