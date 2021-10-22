@@ -381,7 +381,7 @@ footer p{
         transition-property: opacity;
         transition-duration: 450ms;        
     }
-    .titulares:hover{
+    main section article:hover .titulares{
         opacity: 1;
     }
     /* Formulario de Registro -----------------------------------*/
